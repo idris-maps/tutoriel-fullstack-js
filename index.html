@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="description" content="Tutoriel-fullstack-js : Tutoriel Fullstack JavaScript - Chapitre 0 - Introduction">
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>Tutoriel-fullstack-js</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/idris-maps/tutoriel-fullstack-js">View on GitHub</a>
+
+          <h1 id="project_title">Tutoriel-fullstack-js</h1>
+          <h2 id="project_tagline">Tutoriel Fullstack JavaScript - Chapitre 0 - Introduction</h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/idris-maps/tutoriel-fullstack-js/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/idris-maps/tutoriel-fullstack-js/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h1>
+<a id="tutoriel-fullstack-javascript" class="anchor" href="#tutoriel-fullstack-javascript" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Tutoriel "Fullstack JavaScript"</h1>
+
+<p>Le language Javascript existe depuis 1995. Connu principalement comme le language natif des navigateurs internet, faute d'être le language informatique le plus apprécié, il est devenu indispensable au web. En 20 ans d'existence, le language, et surtout les outils pour l'écrire, a connu beaucoup d'évolutions. Dans ce tutoriel nous allons voir comment il peut être utilisé pour créer une simple application web.</p>
+
+<h2>
+<a id="conceptes" class="anchor" href="#conceptes" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Conceptes</h2>
+
+<h3>
+<a id="le-javascript-en-2016" class="anchor" href="#le-javascript-en-2016" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Le JavaScript en 2016</h3>
+
+<p>Utilisé au départ pour de petites interactions sur les sites internet, le JavaScript permet aujourd'hui de créer de véritables applications. Grâce à l'invention de <a href="https://nodejs.org">NodeJS</a> en 2009, le language est passé d'une utilisation strictement confinée aux navigateurs à un language qui peut être exectué sur un ordinateur ou un serveur, d'où le "fullstack" dans le titre.</p>
+
+<h3>
+<a id="fullstack" class="anchor" href="#fullstack" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Fullstack</h3>
+
+<p>Dans le jargon, "fullstack" comprends une partie "frontend", liée à une page web et exécutée dans un navigateur et une partie "backend", exécutée côté serveur. Pour le "frontend", nous n'avons pas de choix, seul JavaScript est compris par le navigateur. Pour le "backend" il existe une multitude de languages (PHP, python, java...) mais il y a un avantage certain à utiliser le même language des deux côtés. C'est ce que nous allons faire ici.</p>
+
+<h3>
+<a id="mvc" class="anchor" href="#mvc" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>MVC</h3>
+
+<p>Le MVC est un <a href="https://fr.wikipedia.org/wiki/Patron_de_conception">patron de conception</a> ("design pattern" en anglais) qui permet de structurer un programme informatique. Il existe depuis les années 1970 et signifie <a href="https://fr.wikipedia.org/wiki/Mod%C3%A8le-vue-contr%C3%B4leur">Modèle-Vue-Contrôleurs</a>.</p>
+
+<p>Pour faire court, le principe consiste à avoir un Modèle de données indépendant de la présentation (composée de la Vue et des Contrôleurs). Le Modèle met à jour la Vue, ce que voit l'utilisateur. Celui-ci utilise les Contrôleurs pour manipuler le Modèle qui met à jour la vue... et ainsi de suite.</p>
+
+<p><img src="mvc.png" alt="MVC" width="100%"></p>
+
+<p>Utilisé du côté serveur depuis des décennies, ce patron de conception est de plus en plus utilisé côté client. Les navigateurs étant devenu de plus en plus performants permettent de déléguer beaucoup de logique jusqu'ici sur le serveur au client.</p>
+
+<p>Pour démontrer ce principe, nous allons créer plusieurs fois une même application avec une liste de choses à faire.</p>
+
+<h2>
+<a id="table-des-matières" class="anchor" href="#table-des-mati%C3%A8res" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Table des matières</h2>
+
+<p><strong>Chapitre 1</strong></p>
+
+<h3>
+<a id="la-mise-en-page" class="anchor" href="#la-mise-en-page" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><a href="1.mise-en-page/readme.md">La mise en page</a>
+</h3>
+
+<p>Dans le premier chapitre nous allons créer une simple page HTML, sans intéractions, pour avoir une mise en page que nous pourrons réutiliser par la suite. Pour certains composants, nous allons utiliser la librairie CSS Bootstrap de Twitter. </p>
+
+<p><strong>Chapitre 2</strong></p>
+
+<h3>
+<a id="application-en-javascript-pure-ou-vanilla" class="anchor" href="#application-en-javascript-pure-ou-vanilla" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><a href="2.vanilla/readme.md">Application en JavaScript pure ou "vanilla"</a>
+</h3>
+
+<p>La première version de l'application, nous allons l'écrire de A à Z. Le but de l'exercice est de comprendre les différentes parties (le modèle, la vue et les contrôleurs) et ce qu'elles font. Il existe beaucoup de librairies, de scriptes créés par d'autres, qui peuvent nous aider à faire une application web. Pour bien comprendre à quoi elles nous servent et en quoi elles nous sont utiles il faut avoir une idée du code qu'elles nous permettent de ne pas écrire. C'est pour cela que nous n'en utilisons pas ici.</p>
+
+<p><strong>Chapitre 3</strong></p>
+
+<h3>
+<a id="handlebars" class="anchor" href="#handlebars" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><a href="3.handlebars/readme.md">Handlebars</a>
+</h3>
+
+<p>Dans cette deuxième version de notre application. Nous allons utiliser la librairie patron <a href="http://handlebarsjs.com/">Handlebars</a> pour créer la <strong>vue</strong>. L'application va gagner en lisibilité. </p>
+
+<p><strong>Chapitre 4</strong></p>
+
+<h3>
+<a id="riot" class="anchor" href="#riot" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><a href="4.riot/readme.md">Riot</a>
+</h3>
+
+<p>Dans la troisième version, nous aborderons le développement par <strong>composants</strong>. Nous allons créer des composants réutilisables qui contiennent d'une manière logique le couple <strong>Vue-Contrôleurs</strong>. Le concepte a été popularisé par <a href="https://facebook.github.io/react/">React</a> de Facebook. Nous allons utiliser la librairie <a href="http://riotjs.com/">Riot</a>.</p>
+
+<p><strong>Chapitre 5</strong></p>
+
+<h3>
+<a id="angular" class="anchor" href="#angular" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><a href="5.angular/readme.md">Angular</a>
+</h3>
+
+<p>Dans la quatrième et dernière version de l'application nous allons utiliser le "framework" <a href="https://angularjs.org/">Angular</a> de Google. Cette fois il ne s'agit plus de remplacer des bouts de codes par des librairies comme dans les deux chapitres précédants mais d'entrer dans une logique de conception en soit. Angular, bien qu'écrit en JavaScript, a une syntaxe, logique et structure particulières. Nous allons voir les pours et les contres d'une telle approche.</p>
+
+<p><strong>Chapitre 6</strong></p>
+
+<h3>
+<a id="le-serveur" class="anchor" href="#le-serveur" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><a href="6.serveur/readme.md">Le serveur</a>
+</h3>
+
+<p>Dans ce chapitre nous allons créer un serveur qui fait le lien entre les clients (les applications web) et une base de données. Nous allons utiliser le style d'architecture <a href="https://fr.wikipedia.org/wiki/Representational_State_Transfer">REST</a> pour la communication entre les clients et la base. Le serveur sera écrit en JavaScript avec <a href="http://expressjs.com/">Express</a>.</p>
+
+<p><strong>Chapitre 7</strong></p>
+
+<h3>
+<a id="ajax" class="anchor" href="#ajax" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><a href="7.ajax/readme.md">AJAX</a>
+</h3>
+
+<p>Dans le dernier chapitre nous allons adapter les clients pour qu'ils communiquent avec le serveur par requêtes <a href="https://fr.wikipedia.org/wiki/Ajax_%28informatique%29">AJAX</a> une architecture intimement liée aux serveurs REST.</p>
+
+<h2>
+<a id="pré-requis" class="anchor" href="#pr%C3%A9-requis" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Pré-requis</h2>
+
+<p>Pour suivre ce tutoriel, vous devez connaître un peu de <a href="https://fr.wikipedia.org/wiki/Hypertext_Markup_Language">HTML</a> et de <a href="https://fr.wikipedia.org/wiki/Feuilles_de_style_en_cascade">CSS</a> et avoir quelques rudiments de JavaScript. </p>
+
+<p>Nous allons utiliser <a href="https://nodejs.org/">NodeJS</a> aussi bien pour créer les scriptes à joindre aux pages HTML que pour écrire le serveur. Si le programme n'est pas encore installé sur votre machine, faites-le maintenant. </p>
+
+<p>J'utilise Linux mais outre l'installation, ça ne devrait pas avoir d'importance.</p>
+
+<h3>
+<a id="npm" class="anchor" href="#npm" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>NPM</h3>
+
+<p><a href="https://www.npmjs.com/">NPM</a> ou gestionnaire de paquets Node sera installé avec Node. Nous allons l'utiliser pour télécharger des scriptes externes et pour construire nos applications.</p>
+
+<h4>
+<a id="initialiser-npm" class="anchor" href="#initialiser-npm" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Initialiser NPM</h4>
+
+<p>Pour chaque projet nous allons initialiser NPM avec la commande:</p>
+
+<pre><code>$ npm init
+</code></pre>
+
+<p>Dans ce tutoriel nous allons beaucoup utiliser le terminal. Les commandes seront précedées par un symbole <code>$</code>, comme dans les systèmes UNIX. Si vous êtes sous Windows, il me semble que le terminal ressemble plutôt à <code>c:\&gt;</code>.</p>
+
+<p><code>npm init</code> var créer un fichier <code>package.json</code> à la racine du dossier dans lequel vous l'exécuté. Quelques questions vont vous être posées lors de l'exécution. Vous pouvez donner la réponse par défaut en appuyant sur la touche <code>enter</code>.</p>
+
+<h4>
+<a id="télécharger-des-paquets" class="anchor" href="#t%C3%A9l%C3%A9charger-des-paquets" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Télécharger des paquets</h4>
+
+<p>Une fois NPM initialisé, vous pouvez télécharger des paquets avec <code>npm install</code>. Pour installer <code>riot</code> par exemple:</p>
+
+<pre><code>$ npm install riot --save
+</code></pre>
+
+<p><code>--save</code> va faire en sorte que les paquets téléchargés soient ajoutés à <code>package.json</code> pour garder une trace des dépendances que vous avez utilisé.</p>
+
+<h4>
+<a id="utiliser-un-paquet" class="anchor" href="#utiliser-un-paquet" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Utiliser un paquet</h4>
+
+<p>Pour utiliser un scripte dans un autre, nous avons la syntaxe suivante:</p>
+
+<pre><code>var riot = require('riot')
+</code></pre>
+
+<p>Si nous créons un fichier <code>exemple_0.js</code> et souhaitons y utiliser <code>riot</code>, écrivez la ligne ci-dessus en haut de page. <code>riot</code> sera disponible par la variable du même nom.</p>
+
+<p>Vous pouvez aussi utiliser <code>require()</code> pour référenser des scriptes que vous avez écris de la même manière.</p>
+
+<p>Supposons que nous ayons un fichier <code>message.js</code> avec:</p>
+
+<pre><code>exports.bonjour = function(nom) {
+ return 'Bonjour ' + nom + ' !'
+}
+
+exports.aurevoir = function(nom) {
+ return 'Au revoir ' + nom + ' !'
+}
+</code></pre>
+
+<p>Nous pouvons l'utiliser dans un autre fichier <code>exemple_1.js</code> dans le même dossier ce cette manière:</p>
+
+<pre><code>var message = require('./message')
+
+console.log(message.bonjour('Jean-Pierre'))
+</code></pre>
+
+<p>Si vous lancez le fichier dans le terminal:</p>
+
+<pre><code>$ node exemple_01
+</code></pre>
+
+<p>Vous aurez:</p>
+
+<pre><code>Bonjour Jean-Pierre !
+</code></pre>
+
+<h4>
+<a id="installer-un-paquet-globalement" class="anchor" href="#installer-un-paquet-globalement" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Installer un paquet globalement</h4>
+
+<p>Dans l'exemple ci-dessus nous avons téléchargé <code>riot</code> pour l'utiliser dans le projet. Nous pouvons aussi installer des paquets <strong>globalement</strong>. C'est à dire que vous pourrez les utiliser dans n'importe quel dossier. Pour ce tutoriel, nous allons utiliser les paquets <code>browserify</code>, <code>watchify</code> et <code>minify</code>. Nous les installons globalement en ajoutant <code>-g</code> à la commande.</p>
+
+<pre><code>$ npm install browserify watchify minify -g
+</code></pre>
+
+<p>Nous pourrons ainsi les utiliser dans chaque projet.</p>
+
+<p><strong>browserify</strong></p>
+
+<p>Cette librairie sert à combiner tous nos fichiers JavaScript en un seul fichier, celui qui sera référencé dans la page HTML. Si nous reprenons le scripte <code>exemple_1.js</code> où nous avons référencé <code>message.js</code> nous créons un scripte combiné <code>combine.js</code> avec cette commande:</p>
+
+<pre><code>$ browserify exemple_1.js -o combine.js
+</code></pre>
+
+<p><strong>watchify</strong></p>
+
+<p>Watchify fait la même chose que browserify. Sauf qu'une fois la commande lancée, elle surveillera les fichiers référencés pour mettre à jour le scripte final à chaque modification. Elle sera utile pendant que nous travaillons sur une application.</p>
+
+<pre><code>$ watchify exemple_1.js -o combine.js
+</code></pre>
+
+<p><strong>minify</strong></p>
+
+<p>Comme son nom l'indique minify sert à minifier, c'est à dire rendre aussi petit que possible un scripte.</p>
+
+<pre><code>$ minify exemple_1.js -o exemple_1.min.js
+</code></pre>
+
+<h4>
+<a id="scriptes-npm" class="anchor" href="#scriptes-npm" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Scriptes NPM</h4>
+
+<p>Pour ne pas avoir à réécrire les commandes dans le terminal à chaque fois, vous pouvez les sauvez dans <code>package.json</code>.</p>
+
+<p>Par exemple:</p>
+
+<pre><code>{
+  "name": "Exemple",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "browserify": "browserify main.js -o script.js" // &lt;-- ici
+  },
+  "author": "idris-maps.com",
+  "license": "GPL-2.0"
+}
+</code></pre>
+
+<p>Puis lancez la commande avec <code>npm run</code></p>
+
+<pre><code>$ npm run browserify
+</code></pre>
+
+<p>Avec <code>|</code> vous pouvez créer des commandes qui se lancent l'une après l'autre:</p>
+
+<pre><code>{
+  "name": "Exemple",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "browserify": "browserify main.js -o script.js",
+    "minify": "minify script.js -o script.min.js",
+    "les-deux": "browserify main.js -o script.js | minify script.js -o script.min.js"
+  },
+  "author": "idris-maps.com",
+  "license": "GPL-2.0"
+}
+</code></pre>
+
+<p>En lançant:</p>
+
+<pre><code>$ npm run les-deux
+</code></pre>
+
+<p>Browserify va combiner <code>main.js</code> et ses dépendences en un seul fichier <code>script.js</code>, puis minify va comprimer <code>script.js</code> pour créer <code>script.min.js</code>.</p>
+
+<h2>
+<a id="le-code" class="anchor" href="#le-code" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Le code</h2>
+
+<p>Si vous avez installé NodeJS sur votre ordinateur et installé globalement <code>browserify</code>, <code>watchify</code> et <code>minify</code>, vous êtes prets à commencer ce tutoriel.</p>
+
+<p>Vous trouverez le code pour chaque exemple sur <a href="https://github.com/idris-maps/tutoriel-fullstack-js">github</a>.</p>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Tutoriel-fullstack-js maintained by <a href="https://github.com/idris-maps">idris-maps</a></p>
+        <p>Published with <a href="https://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
+</html>
