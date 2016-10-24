@@ -28,43 +28,43 @@ Pour démontrer ce principe, nous allons créer plusieurs fois une même applica
 
 **Chapitre 1**
 
-### [La mise en page](1.mise-en-page/readme.md)
+### [La mise en page](https://github.com/idris-maps/tutoriel-fullstack-js-1-mise-en-page/blob/master/readme.md)
 
 Dans le premier chapitre nous allons créer une simple page HTML, sans intéractions, pour avoir une mise en page que nous pourrons réutiliser par la suite. Pour certains composants, nous allons utiliser la librairie CSS Bootstrap de Twitter. 
 
 **Chapitre 2**
 
-### [Application en JavaScript pure ou "vanilla"](2.vanilla/readme.md)
+### [Application en JavaScript pure ou "vanilla"](https://github.com/idris-maps/tutoriel-fullstack-js-2-vanilla-js/blob/master/readme.md)
 
 La première version de l'application, nous allons l'écrire de A à Z. Le but de l'exercice est de comprendre les différentes parties (le modèle, la vue et les contrôleurs) et ce qu'elles font. Il existe beaucoup de librairies, de scriptes créés par d'autres, qui peuvent nous aider à faire une application web. Pour bien comprendre à quoi elles nous servent et en quoi elles nous sont utiles il faut avoir une idée du code qu'elles nous permettent de ne pas écrire. C'est pour cela que nous n'en utilisons pas ici.
 
 **Chapitre 3**
 
-### [Handlebars](3.handlebars/readme.md)
+### [Handlebars](https://github.com/idris-maps/tutoriel-fullstack-js-3-handlebars/blob/master/readme.md)
 
 Dans cette deuxième version de notre application. Nous allons utiliser la librairie patron [Handlebars](http://handlebarsjs.com/) pour créer la **vue**. L'application va gagner en lisibilité. 
 
 **Chapitre 4**
 
-### [Riot](4.riot/readme.md)
+### [Riot](https://github.com/idris-maps/tutoriel-fullstack-js-4-riot/blob/master/readme.md)
 
 Dans la troisième version, nous aborderons le développement par **composants**. Nous allons créer des composants réutilisables qui contiennent d'une manière logique le couple **Vue-Contrôleurs**. Le concepte a été popularisé par [React](https://facebook.github.io/react/) de Facebook. Nous allons utiliser la librairie [Riot](http://riotjs.com/).
 
 **Chapitre 5**
 
-### [Angular](5.angular/readme.md)
+### [Angular](https://github.com/idris-maps/tutoriel-fullstack-js-5-angular/blob/master/readme.md)
 
 Dans la quatrième et dernière version de l'application nous allons utiliser le "framework" [Angular](https://angularjs.org/) de Google. Cette fois il ne s'agit plus de remplacer des bouts de codes par des librairies comme dans les deux chapitres précédants mais d'entrer dans une logique de conception en soit. Angular, bien qu'écrit en JavaScript, a une syntaxe, logique et structure particulières. Nous allons voir les pours et les contres d'une telle approche.
 
 **Chapitre 6**
 
-### [Le serveur](6.serveur/readme.md)
+### [Le serveur](https://github.com/idris-maps/tutoriel-fullstack-js-6-serveur/blob/master/readme.md)
 
 Dans ce chapitre nous allons créer un serveur qui fait le lien entre les clients (les applications web) et une base de données. Nous allons utiliser le style d'architecture [REST](https://fr.wikipedia.org/wiki/Representational_State_Transfer) pour la communication entre les clients et la base. Le serveur sera écrit en JavaScript avec [Express](http://expressjs.com/).
 
 **Chapitre 7**
 
-### [AJAX](7.ajax/readme.md)
+### [AJAX](https://github.com/idris-maps/tutoriel-fullstack-js-7-ajax/blob/master/readme.md)
 
 Dans le dernier chapitre nous allons adapter les clients pour qu'ils communiquent avec le serveur par requêtes [AJAX](https://fr.wikipedia.org/wiki/Ajax_%28informatique%29) une architecture intimement liée aux serveurs REST.
 
